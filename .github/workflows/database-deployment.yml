@@ -13,10 +13,10 @@ on:
       default: 'SqlServer'
       type: choice
       options:
-        - SqlServer
-        - Oracle
-        - Postgres
-        - MySql
+        - 'SqlServer'
+        - 'Oracle'
+        - 'Postgres'
+        - 'MySql'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
