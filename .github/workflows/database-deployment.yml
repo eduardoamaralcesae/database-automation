@@ -51,6 +51,7 @@ jobs:
           echo Add other actions to build, 
           echo test, and deploy your project.
           echo "O nome do servidor : ${{ github.event.inputs.server_name }}"
+           echo "A pass : ${{ secrets.DBUSER }}"
           pwd
           ls -all
 
