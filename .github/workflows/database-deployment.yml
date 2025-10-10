@@ -53,5 +53,10 @@ jobs:
           echo "O nome do servidor : ${{ github.event.inputs.server_name }}"
           pwd
           ls -all
+
+          sed 's/password=/password=${{ secrets.DBUSER }}/' secrets.yml
+
+          cat secrets.yml
+          
           python exemplo.py ${{ github.event.inputs.server_name }} ${{ github.event.inputs.server_type }} ${{ secrets.DBUSER }}
           ls -l
