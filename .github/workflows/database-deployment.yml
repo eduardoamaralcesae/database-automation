@@ -53,5 +53,5 @@ jobs:
           echo "O nome do servidor : ${{ github.event.inputs.server_name }}"
           pwd
           ls -all
-          python exemplo.py ${{ github.event.inputs.server_name }} ${{ github.event.inputs.server_type }}
+          python exemplo.py ${{ github.event.inputs.server_name }} ${{ github.event.inputs.server_type }} ${{ secrets.DBUSER }}
           ls -l
