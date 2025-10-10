@@ -51,7 +51,7 @@ jobs:
           echo Add other actions to build, 
           echo test, and deploy your project.
           echo "O nome do servidor : ${{ github.event.inputs.server_name }}"
-          ping ${{ github.event.inputs.server_name }}
           pwd
-          python --version
+          ls -all
+          python exemplo.py ${{ github.event.inputs.server_name }} ${{ github.event.inputs.server_type }}
           ls -l
