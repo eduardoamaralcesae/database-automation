@@ -1,4 +1,4 @@
-nome=parametro[0]
-tipo=parametro[1]
+nome=args[1]
+tipo=args[2]
 
-print(nome)
+print(nome, tipo)
