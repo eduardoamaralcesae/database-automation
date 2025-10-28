@@ -1,3 +1,3 @@
 
 
-print(nome, tipo)
+print("Hello World")
